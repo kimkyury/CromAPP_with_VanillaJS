@@ -1,0 +1,29 @@
+body {
+  background-color: #ecf0f1;
+}
+
+h1 {
+  color: #34495e;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+body {
+  color: #34495e;
+}
+
+.cliked {
+  color: #7f8c8d;
+}
+
+/* display: 요소를 어떤 형태로 나타내게 할 것인지를 말하는 속성 */
+.form,
+.greetings {
+  display: none; /* 박스가 생성되지 않아 공간을 차지하지 않음 */
+}
+
+.showing {
+  display: block; /* 새로운 라인에 요소가 배치되며 화면 크기의 전체 가로폭을 영역으로 차지 */
+}
