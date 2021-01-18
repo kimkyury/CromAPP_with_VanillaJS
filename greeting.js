@@ -6,18 +6,15 @@ const USER_LS="currentUser", //사용자의 이름을 담는 key
 SHOWING_ON = "showing";
 
 
-
 function saveName(text){ //내 이름을 로컬스토리지에 저장
     localStorage.setItem(USER_LS, text); // currentUser의 value으로 사용자 저장
 }
-
 
 function paintGreeting(text){ 
     form.classList.remove(SHOWING_ON);  
     greeting.classList.add(SHOWING_ON);
     greeting.innerText = `Hello ${text}`;
 }
-
 
 function handleSumit(event){ 
     event.preventDefault();
@@ -32,7 +29,6 @@ function askForName() {
     form.addEventListener("submit", handleSumit)
 
 }
-
 
 function loadName(){
     const currentUser = localStorage.getItem(USER_LS); //로컬에서 이름을 찾아온다
